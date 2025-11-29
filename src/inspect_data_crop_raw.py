@@ -23,7 +23,7 @@ try:
     unique_districts = df.iloc[:, 1].nunique()
     
     print("-" * 30)
-    print(f"📊 DATASET STATISTICS")
+    print(f" DATASET STATISTICS")
     print("-" * 30)
     print(f"Total Rows:        {total_rows:,}")  # The comma adds thousands separator (e.g., 10,000)
     print(f"Total Columns:     {total_cols}")
