@@ -3,9 +3,11 @@ import requests
 import os
 import time
 from tqdm import tqdm
+from src.config import DISTRICT_MAPPING, WEATHER_DATA_DIR, WEATHER_START_YEAR, WEATHER_END_YEAR
 
-INPUT_COORDS = os.path.join("data", "interim", "district_mapping.csv")
-OUTPUT_FOLDER = os.path.join("data", "raw", "nasa_weather")
+
+INPUT_COORDS = DISTRICT_MAPPING
+OUTPUT_FOLDER = WEATHER_DATA_DIR
 BASE_URL = "https://power.larc.nasa.gov/api/temporal/daily/point"
 
 def fetch_weather():

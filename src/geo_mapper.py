@@ -5,13 +5,15 @@ from tqdm import tqdm
 import os
 import re  # Added for removing numbers like "1. "
 
+from src.config import RAW_CROP_DATA, DISTRICT_MAPPING
+
 # ==========================================
 # CONFIGURATION (Updated with your filenames)
 # ==========================================
 # Input File
-RAW_DATA_PATH = os.path.join("data", "raw", "gov_crop_data", "crop_production_2015_2023.xls")
+RAW_DATA_PATH = RAW_CROP_DATA
 # Output File
-OUTPUT_PATH = os.path.join("data", "interim", "district_mapping.csv")
+OUTPUT_PATH = DISTRICT_MAPPING
 
 # ==========================================
 # LOGIC

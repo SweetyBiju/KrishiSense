@@ -2,12 +2,14 @@ import pandas as pd
 import os
 from tqdm import tqdm
 
+
+from src.config import RAW_CROP_DATA, WEATHER_DATA_DIR,MASTER_DATASET
 # ==========================================
 # CONFIGURATION
 # ==========================================
-CROP_DATA_PATH = os.path.join("data", "raw", "gov_crop_data", "crop_production_2015_2023.xls")
-WEATHER_DIR = os.path.join("data", "raw", "nasa_weather")
-OUTPUT_PATH = os.path.join("data", "processed", "KrishiSense_Master_Dataset.csv")
+CROP_DATA_PATH = RAW_CROP_DATA
+WEATHER_DIR = WEATHER_DATA_DIR
+OUTPUT_PATH = MASTER_DATASET
 
 def load_gov_data():
     print("[INFO] Loading Government Crop Data...")

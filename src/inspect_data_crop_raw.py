@@ -1,9 +1,9 @@
 import pandas as pd
-import os
 
+
+from src.config import RAW_CROP_DATA
 # Path to your file
-FILE_PATH = os.path.join("data", "raw", "gov_crop_data", "crop_production_2015_2023.xls")
-
+FILE_PATH = RAW_CROP_DATA
 print("Loading dataset... (This might take a moment)")
 
 try:

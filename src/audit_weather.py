@@ -1,11 +1,11 @@
 import pandas as pd
 import os
-
+from src.config import DISTRICT_MAPPING, WEATHER_DATA_DIR
 # ==========================================
 # CONFIGURATION
 # ==========================================
-MAPPING_FILE = os.path.join("data", "interim", "district_mapping.csv")
-WEATHER_DIR = os.path.join("data", "raw", "nasa_weather")
+MAPPING_FILE = DISTRICT_MAPPING
+WEATHER_DIR = WEATHER_DATA_DIR
 
 def audit_data():
     print(f" Starting Data Audit...")

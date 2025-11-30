@@ -1,11 +1,10 @@
 import pandas as pd
 import os
 import re
-
+from src.config import RAW_CROP_DATA, WEATHER_DATA_DIR
 # CONFIG
-CROP_DATA_PATH = os.path.join("data", "raw", "gov_crop_data", "crop_production_2015_2023.xls")
-WEATHER_DIR = os.path.join("data", "raw", "nasa_weather")
-
+CROP_DATA_PATH = RAW_CROP_DATA
+WEATHER_DIR = WEATHER_DATA_DIR
 def debug_one_row():
     print(" STARTING DEEP DIVE DEBUG...")
     
